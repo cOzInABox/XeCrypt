@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aes\aescrypt.c" />
+    <ClCompile Include="aes\aeskey.c" />
+    <ClCompile Include="aes\aestab.c" />
+    <ClCompile Include="aes\aes_modes.c" />
+    <ClCompile Include="aes\ctr_inc.c" />
+    <ClCompile Include="bign\base64.c" />
+    <ClCompile Include="bign\bigdUtils.c" />
+    <ClCompile Include="bign\common.c" />
+    <ClCompile Include="bign\hash.c" />
+    <ClCompile Include="bign\mpAdd.c" />
+    <ClCompile Include="bign\mpAND.c" />
+    <ClCompile Include="bign\mpBitLength.c" />
+    <ClCompile Include="bign\mpCompare.c" />
+    <ClCompile Include="bign\mpComplement.c" />
+    <ClCompile Include="bign\mpDivide.c" />
+    <ClCompile Include="bign\mpEqual.c" />
+    <ClCompile Include="bign\mpGcd.c" />
+    <ClCompile Include="bign\mpHalfDiv.c" />
+    <ClCompile Include="bign\mpHalfMod.c" />
+    <ClCompile Include="bign\mpIsOne.c" />
+    <ClCompile Include="bign\mpIsPrime.c" />
+    <ClCompile Include="bign\mpIsZero.c" />
+    <ClCompile Include="bign\mpJacobi.c" />
+    <ClCompile Include="bign\mpLegendre.c" />
+    <ClCompile Include="bign\mpModAdd.c" />
+    <ClCompile Include="bign\mpModExp.c" />
+    <ClCompile Include="bign\mpModInv.c" />
+    <ClCompile Include="bign\mpModMult.c" />
+    <ClCompile Include="bign\mpModSquare.c" />
+    <ClCompile Include="bign\mpModSquareRoot.c" />
+    <ClCompile Include="bign\mpModSubtract.c" />
+    <ClCompile Include="bign\mpModulo.c" />
+    <ClCompile Include="bign\mpMultiply.c" />
+    <ClCompile Include="bign\mpOR.c" />
+    <ClCompile Include="bign\mpSetDigit.c" />
+    <ClCompile Include="bign\mpSetEqual.c" />
+    <ClCompile Include="bign\mpSetZero.c" />
+    <ClCompile Include="bign\mpShiftLeft.c" />
+    <ClCompile Include="bign\mpShiftRight.c" />
+    <ClCompile Include="bign\mpShortAdd.c" />
+    <ClCompile Include="bign\mpShortCmp.c" />
+    <ClCompile Include="bign\mpShortDiv.c" />
+    <ClCompile Include="bign\mpShortMod.c" />
+    <ClCompile Include="bign\mpShortModMult.c" />
+    <ClCompile Include="bign\mpShortMult.c" />
+    <ClCompile Include="bign\mpShortSub.c" />
+    <ClCompile Include="bign\mpSizeof.c" />
+    <ClCompile Include="bign\mpSolinasPrime.c" />
+    <ClCompile Include="bign\mpSquare.c" />
+    <ClCompile Include="bign\mpSubtract.c" />
+    <ClCompile Include="bign\mpSwap.c" />
+    <ClCompile Include="bign\mpXOR.c" />
+    <ClCompile Include="bign\pkcs1-rsa.c" />
+    <ClCompile Include="bign\spDivide.c" />
+    <ClCompile Include="bign\spGcd.c" />
+    <ClCompile Include="bign\spIsPrime.c" />
+    <ClCompile Include="bign\spModExp.c" />
+    <ClCompile Include="bign\spModInv.c" />
+    <ClCompile Include="bign\spModMult.c" />
+    <ClCompile Include="bign\spMultiply.c" />
+    <ClCompile Include="bign\spPseudoRand.c" />
+    <ClCompile Include="des\des.c" />
+    <ClCompile Include="md5\md5.c" />
+    <ClCompile Include="rc4\rc4_enc.c" />
+    <ClCompile Include="rc4\rc4_skey.c" />
+    <ClCompile Include="sha\sha1dgst.c" />
+    <ClCompile Include="xecrypt.c" />
+    <ClCompile Include="xecryptBn.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes\aes.h" />
+    <ClInclude Include="aes\aesopt.h" />
+    <ClInclude Include="aes\aestab.h" />
+    <ClInclude Include="aes\aes_via_ace.h" />
+    <ClInclude Include="aes\brg_endian.h" />
+    <ClInclude Include="aes\brg_types.h" />
+    <ClInclude Include="aes\ctr_inc.h" />
+    <ClInclude Include="bign\bigdigits.h" />
+    <ClInclude Include="bign\hash.h" />
+    <ClInclude Include="bign\mcrypto.h" />
+    <ClInclude Include="bign\pkcs1-rsa.h" />
+    <ClInclude Include="des\des.h" />
+    <ClInclude Include="md5\md5.h" />
+    <ClInclude Include="rc4\rc4.h" />
+    <ClInclude Include="rc4\rc4_locl.h" />
+    <ClInclude Include="sha\sha.h" />
+    <ClInclude Include="sha\sha_locl.h" />
+    <ClInclude Include="xecryptTypes.h" />
+    <ClInclude Include="xecrypt.h" />
+    <ClInclude Include="xecryptBn.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D710E01D-CC22-4989-BA94-3058CC146DA5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>XeCrypt</RootNamespace>
+    <ProjectName>XeCrypt</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

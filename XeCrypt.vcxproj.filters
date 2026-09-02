@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\aes">
+      <UniqueIdentifier>{a270b1fa-9177-4ea8-84fb-a78e9fac0c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bign">
+      <UniqueIdentifier>{fc874789-806e-42ee-87c6-1c2fd231af01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rc4">
+      <UniqueIdentifier>{5e9783fc-b9a2-4af4-91e1-96be29119743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sha">
+      <UniqueIdentifier>{779b9ad5-ba5d-4913-a450-05ae668d52a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\aes">
+      <UniqueIdentifier>{7c25257f-ec1c-4b10-8e66-c12684e05deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bign">
+      <UniqueIdentifier>{d69e8484-5fd2-47d0-988c-c42cadfa7d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sha">
+      <UniqueIdentifier>{416455d0-3e86-41fb-86d8-c3bcf8057afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rc4">
+      <UniqueIdentifier>{b003b3a7-bb9d-4a7e-9eed-b61c33a52e20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\des">
+      <UniqueIdentifier>{31fe5d2f-af0e-4fc2-951c-d083153318ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\des">
+      <UniqueIdentifier>{201ef221-1b15-4f01-b0d6-3fcee06d43aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\md5">
+      <UniqueIdentifier>{c09f03d1-1ccf-4ffa-987a-2eec0c3f361c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md5">
+      <UniqueIdentifier>{1d111b81-fdec-416b-9676-1310ae63ae89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xecrypt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="xecryptBn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\ctr_inc.c">
+      <Filter>Source Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aes_modes.c">
+      <Filter>Source Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aescrypt.c">
+      <Filter>Source Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aeskey.c">
+      <Filter>Source Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="aes\aestab.c">
+      <Filter>Source Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spPseudoRand.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\base64.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\bigdUtils.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\common.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\hash.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpAdd.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpAND.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpBitLength.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpCompare.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpComplement.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpDivide.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpEqual.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpGcd.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpHalfDiv.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpHalfMod.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpIsOne.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpIsPrime.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpIsZero.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpJacobi.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpLegendre.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModAdd.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModExp.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModInv.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModMult.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModSquare.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModSquareRoot.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModSubtract.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpModulo.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpMultiply.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpOR.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSetDigit.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSetEqual.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSetZero.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShiftLeft.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShiftRight.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortAdd.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortCmp.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortDiv.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortMod.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortModMult.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortMult.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpShortSub.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSizeof.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSolinasPrime.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSquare.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSubtract.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpSwap.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\mpXOR.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\pkcs1-rsa.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spDivide.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spGcd.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spIsPrime.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spModExp.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spModInv.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spModMult.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="bign\spMultiply.c">
+      <Filter>Source Files\bign</Filter>
+    </ClCompile>
+    <ClCompile Include="rc4\rc4_skey.c">
+      <Filter>Source Files\rc4</Filter>
+    </ClCompile>
+    <ClCompile Include="rc4\rc4_enc.c">
+      <Filter>Source Files\rc4</Filter>
+    </ClCompile>
+    <ClCompile Include="sha\sha1dgst.c">
+      <Filter>Source Files\sha</Filter>
+    </ClCompile>
+    <ClCompile Include="des\des.c">
+      <Filter>Source Files\des</Filter>
+    </ClCompile>
+    <ClCompile Include="md5\md5.c">
+      <Filter>Source Files\md5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xecrypt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xecryptBn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aestab.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\brg_endian.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\brg_types.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\ctr_inc.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aes.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aes_via_ace.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="aes\aesopt.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="bign\bigdigits.h">
+      <Filter>Header Files\bign</Filter>
+    </ClInclude>
+    <ClInclude Include="bign\hash.h">
+      <Filter>Header Files\bign</Filter>
+    </ClInclude>
+    <ClInclude Include="bign\mcrypto.h">
+      <Filter>Header Files\bign</Filter>
+    </ClInclude>
+    <ClInclude Include="bign\pkcs1-rsa.h">
+      <Filter>Header Files\bign</Filter>
+    </ClInclude>
+    <ClInclude Include="rc4\rc4_locl.h">
+      <Filter>Header Files\rc4</Filter>
+    </ClInclude>
+    <ClInclude Include="rc4\rc4.h">
+      <Filter>Header Files\rc4</Filter>
+    </ClInclude>
+    <ClInclude Include="sha\sha_locl.h">
+      <Filter>Header Files\sha</Filter>
+    </ClInclude>
+    <ClInclude Include="sha\sha.h">
+      <Filter>Header Files\sha</Filter>
+    </ClInclude>
+    <ClInclude Include="xecryptTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="des\des.h">
+      <Filter>Header Files\des</Filter>
+    </ClInclude>
+    <ClInclude Include="md5\md5.h">
+      <Filter>Header Files\md5</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
