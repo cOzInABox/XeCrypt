@@ -25,6 +25,7 @@ file(GLOB XECRYPT_DES_HEADERS "des/*.h")
 add_library(xecrypt STATIC
     xecrypt.h
     xecryptBn.c
+	xecryptHmacSha.c
     xecryptBn.h
     xecryptTypes.h
     xecrypt.c

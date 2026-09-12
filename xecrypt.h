@@ -120,6 +120,17 @@ extern "C" {
 void XeCryptUidEccEncode(u8* pbaCpuKey);
 int XeCryptHammingWeight(u8* data, int len);
 
+/* Streaming HMAC-SHA1, for callers hashing more inputs than the three
+   XeCryptHmacSha() accepts. Computes the same value. */
+typedef struct _XECRYPT_HMAC_SHA_STATE {
+	XECRYPT_SHA_STATE Inner;
+	XECRYPT_SHA_STATE Outer;
+} XECRYPT_HMAC_SHA_STATE, *PXECRYPT_HMAC_SHA_STATE;
+
+void XeCryptHmacShaInit(PXECRYPT_HMAC_SHA_STATE pHmacState, const unsigned char *pbKey, unsigned int cbKey);
+void XeCryptHmacShaUpdate(PXECRYPT_HMAC_SHA_STATE pHmacState, const unsigned char *pbInp, unsigned int cbInp);
+void XeCryptHmacShaFinal(PXECRYPT_HMAC_SHA_STATE pHmacState, unsigned char *pbOut, unsigned int cbOut);
+
 void XeCryptHmacSha(const unsigned char *pbKey, unsigned int cbKey, const unsigned char *pbInp1, unsigned int cbInp1, const unsigned char *pbInp2, unsigned int cbInp2, const unsigned char *pbInp3, unsigned int cbInp3, unsigned char *pbOut, unsigned int cbOut);
 void XeCryptRc4(unsigned char *pbKey, unsigned int cbKey, unsigned char *pbInpOut, unsigned int cbInpOut);
 void XeCryptRc4Key(PXECRYPT_RC4_STATE pRc4State, unsigned char *pbKey, unsigned int cbKey);

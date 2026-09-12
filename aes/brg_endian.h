@@ -108,7 +108,8 @@
       defined( __i386__ )  || defined( _M_I86 )  || defined( _M_IX86 )    || \
       defined( __OS2__ )   || defined( sun386 )  || defined( __TURBOC__ ) || \
       defined( vax )       || defined( vms )     || defined( VMS )        || \
-      defined( __VMS )     || defined( _M_X64 )
+      defined( __VMS )     || defined( _M_X64 )  || defined( _M_ARM64 )  || \
+      defined( _M_ARM )    || defined( __aarch64__ ) || defined( __arm__ )
 #  define PLATFORM_BYTE_ORDER IS_LITTLE_ENDIAN
 
 #elif defined( AMIGA )   || defined( applec )    || defined( __AS400__ )  || \

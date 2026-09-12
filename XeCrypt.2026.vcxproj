@@ -87,6 +87,7 @@
     <ClCompile Include="sha\sha1dgst.c" />
     <ClCompile Include="xecrypt.c" />
     <ClCompile Include="xecryptBn.c" />
+    <ClCompile Include="xecryptHmacSha.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aes\aes.h" />
